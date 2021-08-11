@@ -1,0 +1,40 @@
+[debug] [2020-08-10T00:10:36.294Z] ----------------------------------------------------------------------
+[debug] [2020-08-10T00:10:36.296Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\W.F.A\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-10T00:10:36.296Z] CLI Version:   7.15.1
+[debug] [2020-08-10T00:10:36.296Z] Platform:      win32
+[debug] [2020-08-10T00:10:36.296Z] Node Version:  v12.10.0
+[debug] [2020-08-10T00:10:36.297Z] Time:          Mon Aug 10 2020 01:10:36 GMT+0100 (West Africa Standard Time)
+[debug] [2020-08-10T00:10:36.297Z] ----------------------------------------------------------------------
+[debug] [2020-08-10T00:10:36.297Z] 
+[debug] [2020-08-10T00:10:36.311Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-10T00:10:36.312Z] > authorizing via signed-in user
+[debug] [2020-08-10T00:10:36.312Z] [iam] checking project tinyspace-7d773 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-10T00:10:36.315Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-08-10T00:10:36.315Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-08-10T00:10:37.146Z] <<< HTTP RESPONSE 200
+[debug] [2020-08-10T00:10:37.227Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tinyspace-7d773:testIamPermissions  
+
+[debug] [2020-08-10T00:10:38.463Z] <<< HTTP RESPONSE 200
+[debug] [2020-08-10T00:10:38.465Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tinyspace-7d773  
+ 
+[debug] [2020-08-10T00:10:39.354Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tinyspace-7d773'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-08-10T00:10:39.372Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/tinyspace-7d773/versions  
+
+[debug] [2020-08-10T00:10:41.441Z] <<< HTTP RESPONSE 200
+[info] i  hosting[tinyspace-7d773]: beginning deploy...
+[info] i  hosting[tinyspace-7d773]: found 5 files in build
+[debug] [2020-08-10T00:10:41.485Z] [hosting] hash cache [YnVpbGQ] stored for 5 files
+[debug] [2020-08-10T00:10:41.486Z] [hosting][hash queue][FINAL]
+[debug] [2020-08-10T00:10:41.486Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/tinyspace-7d773/versions/e649c7e8ffbf464c:populateFiles  
+ <request body omitted>
+[debug] [2020-08-10T00:10:42.844Z] <<< HTTP RESPONSE 200
+[debug] [2020-08-10T00:10:42.846Z] [hosting][populate queue][FINAL]
+[debug] [2020-08-10T00:10:42.846Z] [hosting] uploads queued: 1
+[debug] [2020-08-10T00:10:45.318Z] [hosting][upload queue][FINAL]
+[info] +  hosting[tinyspace-7d773]: file upload complete
+[debug] [2020-08-10T00:10:45.320Z] [hosting] deploy completed after 3877ms
